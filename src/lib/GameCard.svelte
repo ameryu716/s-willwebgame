@@ -62,7 +62,7 @@
         <p class="card-text o-i h-150">
             {card_info.description}
         </p>
-        <a href={card_info.relative_url} class="btn btn-primary icon-link">
+        <a href={card_info.url} class="btn btn-primary icon-link">
             <svg
                 fill="#fff"
                 xmlns="http://www.w3.org/2000/svg"

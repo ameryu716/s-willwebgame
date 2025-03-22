@@ -15,8 +15,7 @@ export interface card_info {
     subtitle?: string;
     tags?: structure_tag[];
     description: string;
-    relative_url?: string;
-    absolute_url?: string;
+    url: string;
     division: "tool" | "game" | "generator";
 }
 

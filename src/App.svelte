@@ -10,7 +10,7 @@
         links: [
             {
                 title: "将棋の駒ジェネレータ",
-                relative_url: "/genes/shogi-piece-generator",
+                url: "/genes/shogi-piece-generator",
                 thumbnail_url: "/images/link_thumbnails/thumb-t1.png",
                 description: "駒の名前は自分で決めろ、目指せ3D駒モデラー！！",
                 division: "generator",
@@ -29,7 +29,7 @@
             // },
             {
                 title: "BoxDancer",
-                relative_url: "/tools/box-dancer-vue",
+                url: "/tools/box-dancer-vue",
                 thumbnail_url: "/images/link_thumbnails/thumb-t4.png",
                 description:
                     "自分だけのローカルブックマークツール！データはブラウザに保存されるので安心して使えます。",
@@ -37,7 +37,7 @@
             },
             {
                 title: "画像ピンボール",
-                relative_url: "games/img-pinball",
+                url: "games/img-pinball",
                 thumbnail_url: "/images/link_thumbnails/thumb-g2.png",
                 division: "game",
                 description:
@@ -45,7 +45,7 @@
             },
             {
                 title: "ジャイロ将棋",
-                relative_url: "games/geiro-shogi-board",
+                url: "games/geiro-shogi-board",
                 thumbnail_url: "/images/link_thumbnails/thumb-g3.png",
                 division: "game",
                 description:
@@ -53,7 +53,7 @@
             },
             {
                 title: "漢検2級読みクイズ",
-                relative_url: "quizzes/kanji/read/2",
+                url: "quizzes/kanji/read/2",
                 thumbnail_url: "/images/link_thumbnails/thumb-g1.png",
                 division: "game",
                 description:
@@ -61,14 +61,14 @@
             },
             {
                 title: "ColorDD",
-                relative_url: "tools/colordd",
+                url: "tools/colordd",
                 thumbnail_url: "/images/link_thumbnails/thumb-t3.png",
                 division: "tool",
                 description: "カラーツール",
             },
             {
                 title: "Anizon.Client",
-                absolute_url: "tools/colordd",
+                url: "https://anizon.amry.life",
                 thumbnail_url: "/images/link_thumbnails/thumb-t4.png",
                 division: "tool",
                 description: "- Anizon -\nアニソンDB",
