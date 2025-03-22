@@ -1,20 +1,19 @@
 <script>
-    import Favicon from "../assets/favicon.ico";
+    import Favicon from "/favicon.ico";
 </script>
 
 <header>
     <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
             <a class="navbar-brand" href="./">
-                <img
+                <!-- <img
                     src={Favicon}
                     width="24"
                     height="24"
                     class="d-inline-block align-text-top"
                     alt="Logo"
-                />
-                WillWebGame
-                <span>by Ameryu</span>
+                /> -->
+                <span>Ameryu716 Portal</span>
             </a>
             <button
                 class="navbar-toggler"

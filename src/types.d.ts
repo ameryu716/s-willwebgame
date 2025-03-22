@@ -13,10 +13,11 @@ export interface card_info {
     thumbnail_alt?: string;
     title: string;
     subtitle?: string;
-    tags: structure_tag[];
+    tags?: structure_tag[];
     description: string;
-    relative_url: string;
-    division: "tool" | "game";
+    relative_url?: string;
+    absolute_url?: string;
+    division: "tool" | "game" | "generator";
 }
 
 declare module "toastify-js";
