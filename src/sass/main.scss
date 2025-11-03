@@ -14,6 +14,24 @@ img.card-thumbnails {
 
 .card {
     --bs-card-spacer-x: 0.5em;
+
+    &.thumb-cover {
+        position: relative;
+        display: flex;
+        justify-content: end;
+        img.card-thumbnails {
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .card-body {
+            width: 60%;
+            margin-left: 40%;
+            z-index: 1;
+            background-color: rgba($color: #fff, $alpha: 0.7);
+        }
+    }
 }
 
 .badge {

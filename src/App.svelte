@@ -7,6 +7,42 @@
     import type { structure_data } from "./types";
 
     const data: structure_data = {
+        links_portfolio: [
+            {
+                title: "SkillSets",
+                url: "https://portfolio.amry.life",
+                thumbnail_url: "/images/link_thumbnails/thumb-p1.png",
+                description: "ポートフォリオ/スキルセットページです。",
+                division: "portfolio",
+            },
+        ].map((link) => {
+            link.tags = [
+                {
+                    class: "portfolio",
+                    name: "Portfolio",
+                    color: "#4caf50",
+                },
+            ];
+            return link;
+        }),
+        links_stamp: [
+            {
+                title: "陽気な将棋",
+                url: "https://store.line.me/stickershop/product/14991582/ja",
+                thumbnail_url: "/images/stamps/line-stamp-1.png",
+                description: "Stamp1 陽気な将棋",
+                division: "stamp",
+            },
+        ].map((link) => {
+            link.tags = [
+                {
+                    class: "stamp",
+                    name: "Stamp",
+                    color: "#4caf50",
+                },
+            ];
+            return link;
+        }),
         links: [
             {
                 title: "将棋の駒ジェネレータ",
@@ -15,7 +51,6 @@
                 description: "駒の名前は自分で決めろ、目指せ3D駒モデラー！！",
                 division: "generator",
             },
-
             // {
             //     title: "〇〇好き異常行動者否定ジェネレータ",
             //     relative_url: "gene-1",
@@ -127,6 +162,16 @@
 
     <main class="p-3">
         <div class="container-sm">
+            <h2>Portfolio</h2>
+            <hr />
+            <div class="rows row-cols-1 row-cols-sm-3 g-3">
+                {#each data.links_portfolio as ld}
+                    <div class="col">
+                        <GameCard card_info={ld} />
+                    </div>
+                {/each}
+            </div>
+            <hr />
             <h2>Web</h2>
             <hr />
             <div class="row row-cols-1 row-cols-sm-3 g-3">
@@ -138,13 +183,13 @@
             </div>
             <hr />
             <h2>Line Stamp</h2>
-            <a href="https://store.line.me/stickershop/product/14991582/ja">
-                <img
-                    src="/images/stamps/line-stamp-1.png"
-                    alt="Stamp1 陽気な将棋"
-                    width="500"
-                />
-            </a>
+            <div class="row row-cols-1 row-cols-sm-3 g-3">
+                {#each data.links_stamp as ld}
+                    <div class="col">
+                        <GameCard card_info={ld} classNames=" thumb-cover" />
+                    </div>
+                {/each}
+            </div>
         </div>
     </main>
 </div>

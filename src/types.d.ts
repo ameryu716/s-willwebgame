@@ -1,5 +1,7 @@
 export interface structure_data {
     links: card_info[];
+    links_portfolio: card_info[];
+    links_stamp: card_info[];
 }
 
 export interface structure_tag {
@@ -9,6 +11,7 @@ export interface structure_tag {
 }
 
 export interface card_info {
+    class?: string;
     thumbnail_url: string;
     thumbnail_alt?: string;
     title: string;
