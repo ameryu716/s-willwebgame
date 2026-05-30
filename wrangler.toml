@@ -1,6 +1,5 @@
-# wrangler.toml
 name = "amry-life-top"
-pages_build_config = { schema = "v1" }
+compatibility_date = "2024-04-03"
 
 [assets]
 directory = "dist"
