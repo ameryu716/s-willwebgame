@@ -19,7 +19,7 @@ export interface card_info {
     tags?: structure_tag[];
     description: string;
     url: string;
-    division: "tool" | "game" | "generator";
+    division: "tool" | "game" | "generator" | "portfolio" | "stamp";
 }
 
 declare module "toastify-js";

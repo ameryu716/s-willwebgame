@@ -4,7 +4,7 @@
 
     import Header from "./lib/Header.svelte";
     import GameCard from "./lib/GameCard.svelte";
-    import type { structure_data } from "./types";
+    import type { structure_data, card_info } from "./types";
     import thumb_p1 from "./assets/images/link_thumbnails/thumb-p1.png";
     import line_stamp1 from "./assets/images/stamps/line-stamp-1.png";
     import thumb_g1 from "./assets/images/link_thumbnails/thumb-g1.png";
@@ -15,7 +15,7 @@
     import thumb_t4 from "./assets/images/link_thumbnails/thumb-t4.png";
 
     const data: structure_data = {
-        links_portfolio: [
+        links_portfolio: ([
             {
                 title: "SkillSets",
                 url: "https://portfolio.amry.life",
@@ -23,7 +23,7 @@
                 description: "ポートフォリオ/スキルセットページです。",
                 division: "portfolio",
             },
-        ].map((link) => {
+        ] as card_info[]).map((link) => {
             link.tags = [
                 {
                     class: "portfolio",
@@ -33,7 +33,7 @@
             ];
             return link;
         }),
-        links_stamp: [
+        links_stamp: ([
             {
                 title: "陽気な将棋",
                 url: "https://store.line.me/stickershop/product/14991582/ja",
@@ -41,7 +41,7 @@
                 description: "Stamp1 陽気な将棋",
                 division: "stamp",
             },
-        ].map((link) => {
+        ] as card_info[]).map((link) => {
             link.tags = [
                 {
                     class: "stamp",
@@ -51,7 +51,7 @@
             ];
             return link;
         }),
-        links: [
+        links: ([
             {
                 title: "将棋の駒ジェネレータ",
                 url: "/genes/shogi-piece-generator",
@@ -59,17 +59,6 @@
                 description: "駒の名前は自分で決めろ、目指せ3D駒モデラー！！",
                 division: "generator",
             },
-            // {
-            //     title: "〇〇好き異常行動者否定ジェネレータ",
-            //     relative_url: "gene-1",
-            //     thumbnail_url: "/images/link_thumbnails/thumb-t2.png",
-            //     description:
-            //         "「ジェネレータが好きな人と付き合いたいです～！」というのは、ジェネレータで身内ノリしてワイワイできる人を探してるのであって、スクリプトをガンガン書いて笑みを浮かべたり、深夜二時にエラーが出て発狂したりするような異常行動者を探しているわけではない。",
-            //     division: "tool",
-            //     tags: [
-            //         { class: "generator", name: "Generator", color: "#f17070" },
-            //     ],
-            // },
             {
                 title: "BoxDancer",
                 url: "/tools/box-dancer-vue",
@@ -116,7 +105,7 @@
                 division: "tool",
                 description: "- Anizon -\nアニソンDB",
             },
-        ].map((link) => {
+        ] as card_info[]).map((link) => {
             switch (link.division) {
                 case "tool":
                     link.tags = [
@@ -149,19 +138,6 @@
             return link;
         }),
     };
-
-    // Toastify({
-    //     text: "当ページはAWSからロリポップサーバーへ移行しました。",
-    //     // duration: 7000,
-    //     // destination: "https://github.com/apvarun/toastify-js",
-    //     // newWindow: true,
-    //     close: true,
-    //     gravity: "top", // `top` or `bottom`
-    //     position: "right", // `left`, `center` or `right`
-    //     stopOnFocus: true, // Prevents dismissing of toast on hover
-    //     style: {},
-    //     onClick: function () {}, // Callback after click
-    // }).showToast();
 </script>
 
 <div class="wrapper p-2">
@@ -201,3 +177,6 @@
         </div>
     </main>
 </div>
+
+<style lang="scss" scoped>
+</style>

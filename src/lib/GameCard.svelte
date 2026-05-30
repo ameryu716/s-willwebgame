@@ -1,7 +1,7 @@
 <script lang="ts">
-    import type { card_info } from "../types";
+    import type { card_info as CardInfo } from "../types";
 
-    export let card_info: card_info;
+    export let card_info: CardInfo;
     export let classNames: string | null = null;
 </script>
 
