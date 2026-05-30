@@ -1,0 +1,6 @@
+# wrangler.toml
+name = "amry-life-top"
+pages_build_config = { schema = "v1" }
+
+[assets]
+directory = "dist"
